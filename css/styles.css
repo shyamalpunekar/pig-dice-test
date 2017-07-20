@@ -1,0 +1,60 @@
+.page-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4a442;
+  margin-top: 0;
+}
+
+.page-header h1 {
+  font-size: 62px;
+}
+
+#rules {
+  background-color: #f4a442;
+  border: solid black 2px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #6767E4;
+  color: white;
+}
+
+.button-div {
+  text-align: center;
+}
+#game-result {
+  display: none;
+  text-align: center;
+  text-decoration: underline;
+  font-family: cursive;
+}
+
+#start {
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#game-play {
+  display: none;
+  background-color: #D5FDFF;
+  text-align: center;
+  border: solid black 2px;
+}
+
+#game-play button {
+  width: 100px;
+  margin-bottom: 15px;
+}
+#game-play .btn[disabled] {
+  opacity: .25;
+}
+input {
+  margin: 5px;
+}
+
+.die-pics {
+  text-align: center;
+}

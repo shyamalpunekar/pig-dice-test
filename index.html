@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" text="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    <title>Pig Dice!</title>
+  </head>
+  <body>
+    <div class="page-header">
+      <h1>Pig Dice</h1>
+    </div>
+    <div class="container">
+      <div id="rules">
+        <p>Rules :</p>
+        <ul>
+          <li>Two standard dice are rolled.</li>
+          <li>If neither die is a one, their sum is added to the turn total.</li>
+          <li>If a single one is rolled, the player loses their turn score and is forced to end their turn.</li>
+          <li>If two ones are rolled, the player loses their total score and is forced to end their turn.</li>
+          <li>The first player to reach 100 (or value of your choice) is the winner.</li>
+        </ul>
+        <div class="button-div"><button class="btn" id="reset-game">Reset Game</button></div>
+      </div>
+      <div id="game-result">
+        <h2>The Winner is... <span></span></h2>
+      </div>
+      <div id="start" class="row">
+        <form id="game-initializer">
+          <div class="col-xs-6">
+            <label for="player1">first Player Name</label>
+            <input type="text" id="player1name"><br>
+            <label for="player2">Second Player Name</label>
+            <input type="text" id="player2name"><br>
+            <label for="score-to-win">Score to Win</label>
+            <input type="number" id="score-to-win" value="100">
+          </div>
+          <div class="col-xs-6">
+            <button class="btn" type="submit" id="start-game">Start Game</button>
+          </div>
+      </form>
+    </div>
+    <div id="game-play">
+      <div class="row">
+        <div id="player1" class="col-sm-6">
+          <h3></h3>
+          <p class="roll-score">Current Role: </p>
+          <p class="turn-score">Score This Turn: </p>
+          <p class="total-score">Total Score: 0</p>
+          <button class="btn roll">Roll</button><br>
+          <button class="btn end-turn">End Turn</button>
+        </div>
+        <div id="player2" class="col-sm-6">
+            <h3></h3>
+            <p class="roll-score">Current Role: </p>
+            <p class="turn-score">Score This Turn: </p>
+            <p class="total-score">Total Score: 0</p>
+            <button class="roll btn">Roll</button><br>
+            <button class="end-turn btn">End Turn</button>
+
+          </div>
+        </div>
+      </div>
+      </div>
+  </body>
+</html>
